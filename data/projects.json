@@ -1,0 +1,18 @@
+{
+  "proj": [
+    {
+      "id": "1",
+      "name": "Giftix",
+      "image": "https://i.ibb.co/ydg6CXF/Screenshot-2.png",
+      "description": "The most advanced Discord giveaway bot. Giveaway requirements, boost system and more!",
+      "link": "https://giftix.gg"
+    },
+    {
+      "id": "2",
+      "name": "Serity",
+      "image": "https://i.ibb.co/7JsQfH6/fvxBir3.png",
+      "description": "Serity is an interface sales platform. You can buy the interfaces we have prepared for you.",
+      "link": "https://serity.me/"
+    }
+  ]
+}

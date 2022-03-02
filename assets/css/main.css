@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #161424;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-text {
+  color: white;
+  font-size: 38px;
+}
+
+.page-description {
+  color: white;
+  font-size: 23px;
+}
+
+.project-text {
+  color: white;
+  font-size: 30px;
+}
+
+.project-description {
+  color: gray;
+  font-size: 23px;
+}
+
+.repo-text {
+  color: white;
+  font-size: 30px;
+}
+
+.repo-description {
+  color: gray;
+  font-size: 23px;
+}
+
+.repo-card {
+  background-color: #302d40;
+  color: white;
+  font-size: 19px;
+  width: 310px;
+  height: 260px;
+  border-radius: 12px;
+}
+
+.card {
+  background-color: #302d40;
+  width: 280px;
+  height: 380px;
+  border-radius: 12px;
+}
+
+.card-text {
+  color: white;
+  font-size: 30px;
+}
+.card-description {
+  color: #9597b6;
+  font-size: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.nav {
+  background-color: white;
+  position: fixed;
+}
+
+.head {
+  margin-top: 65px;
+  background-color: #191729;
+  padding: 36px;
+  border-radius: 12px;
+}
+
+.idle {
+  box-shadow: rgb(255 165 0) 0px 0px 7px;
+  background-color: orange;
+}
+
+.dnd {
+  box-shadow: rgb(237 66 69) 0px 0px 7px;
+  background-color: rgb(237 66 69);
+}
+
+.online {
+  box-shadow: rgb(0 128 0) 0px 0px 7px;
+  background-color: green;
+}
+.offline {
+  box-shadow: grey 0px 0px 7px;
+  background-color: gray;
+}
+
+.quote {
+  color: gray;
+  margin-top: 65px;
+  font-size: 38px;
+  text-align: center;
+}
+
+.quote-say {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+input:hover {
+  background-color: #1b182e;
+}
+
+input {
+  background-color: #12101f;
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  transition: 0.2s;
+}
+
+textarea {
+  background-color: #12101f;
+}
+
+.submt {
+  color: white;
+}
+
+.submt:hover {
+  background-color: #eccece;
+}
+
+.link {
+  --tw-border-opacity: 0.75;
+  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
+  border-bottom-width: 2px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #eccece;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.icons {
+  width: 2.35em;
+  height: 2.25em;
+}
