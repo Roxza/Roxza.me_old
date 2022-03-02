@@ -1,5 +1,3 @@
-import { NextPage } from "next";
-
 const Loader = (props) => {
   const { type } = props;
 
@@ -17,12 +15,12 @@ const Loader = (props) => {
           <h1 className="text-white font-bold text-3xl clamp-3 mt-3">
             <div className="rounded-md bg-gray-500 h-8 animate-pulse w-2/5 dark:bg-gray-700" />
           </h1>
-          <p className="text-white my-3 opacity-75 mt-8">
+          <div className="text-white my-3 opacity-75 mt-8">
             <div className="mt-1 rounded-md bg-gray-500 h-5 animate-pulse w-2/4 dark:bg-gray-700" />
             <div className="mt-1 rounded-md bg-gray-500 h-5 animate-pulse w-2/3 dark:bg-gray-700" />
             <div className="mt-1 rounded-md bg-gray-500 h-5 animate-pulse w-2/2 dark:bg-gray-700" />
             <div className="mt-1 rounded-md bg-gray-500 h-5 animate-pulse w-2/1 dark:bg-gray-700" />
-          </p>
+          </div>
           <a
             target="_blank"
             href="https://giftix.xyz"
