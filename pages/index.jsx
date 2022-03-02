@@ -65,7 +65,7 @@ export default function Home({ profile, loading, quotes }) {
                 width="800"
                 height="180"
                 className="mt-3 text-center"
-                allowtransparency="true"
+                allowTransparency="true"
                 frameBorder="0"
                 sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
               />
