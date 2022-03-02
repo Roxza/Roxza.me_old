@@ -15,7 +15,7 @@ export default function FourOhFour() {
             <a>
               <br/>
               <button style={{ "backgroundColor" : "#d49090"}} className="w-auto py-2 px-8 rounded-lg text-white shadow-lg shadow-violet-600/20">
-               <i class="fal fa-arrow-left"></i> Go Back
+               <i className="fal fa-arrow-left"></i> Go Back
               </button>
             </a>
           </Link>
