@@ -7,7 +7,7 @@ import Loader from "../components/Loader";
 import Quotes from "../data/quotes.json";
 
 export async function getServerSideProps() {
-  const url = "https://linkcord.swoth.xyz/api/v1/user/939851664389730304";
+  const url = "https://api.roxza.me/api/user?user=939851664389730304";
   const res = await fetch(url);
   const data = await res.json();
   var q = Quotes[Math.floor(Math.random() * Quotes.length)];
