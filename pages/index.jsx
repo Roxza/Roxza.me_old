@@ -7,11 +7,25 @@ import Loader from "../components/Loader";
 import Quotes from "../data/quotes.json";
 
 export async function getServerSideProps() {
-  const url = "https://api.roxza.me/api/user?user=939851664389730304";
-  const res = await fetch(url);
-  const data = await res.json();
   var q = Quotes[Math.floor(Math.random() * Quotes.length)];
-  return { props: { profile: data.data, quotes: q } };
+  try {
+    const url = "https://api.roxza.me/api/user?user=939851664389730304";
+    const res = await fetch(url);
+    const data = await res.json();
+    return {
+      props: {
+        profile: data.data,
+        quotes: q,
+      },
+    };
+  } catch (e) {
+    return {
+      props: {
+        profile: null,
+        quotes: q,
+      },
+    };
+  }
 }
 
 export default function Home({ profile, loading, quotes }) {
@@ -24,7 +38,7 @@ export default function Home({ profile, loading, quotes }) {
       <main className="pt-30">
         <div className="head">
           <div className="order-first mr-5 flex-shrink-0 relative float-right ml-8">
-            {loading ? (
+            {loading || !profile ? (
               <>
                 <Loader type="avatar" />
                 <Loader type="status" />
@@ -57,18 +71,18 @@ export default function Home({ profile, loading, quotes }) {
           <p className="quote-say">{quotes.say}</p>
         </div>
         <div>
-          {profile.spotify === null ? (
+          {!profile || profile.spotify === null ? (
             <></>
           ) : (
-              <iframe
-                src="https://linkcord.swoth.xyz/api/v1/widget/939851664389730304?type=spotify&theme=dark"
-                width="800"
-                height="180"
-                className="mt-3 text-center"
-                allowTransparency="true"
-                frameBorder="0"
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-              />
+            <iframe
+              src="https://linkcord.swoth.xyz/api/v1/widget/939851664389730304?type=spotify&theme=dark"
+              width="800"
+              height="180"
+              className="mt-3 text-center"
+              allowTransparency="true"
+              frameBorder="0"
+              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+            />
           )}
         </div>
       </main>
